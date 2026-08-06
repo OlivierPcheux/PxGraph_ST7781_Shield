@@ -1,0 +1,38 @@
+// Version 1.0.0
+
+//###########################################################################
+//###########################################################################
+//####                                                                   ####
+//####                           Olivier Pécheux                         ####
+//####                          Olivier@Pecheux.fr                       ####
+//####                         (33) +6 69 77 82 58                       ####
+//####                http://arduino.dansetrad.fr/PxGraph                ####
+//####                                                                   ####
+//###########################################################################
+//###########################################################################
+
+
+// Ceci est un complément aux pages de définition et d'explications de la
+// librairie PxGraph. Ce programme illustre l'utilisation de la fonction
+// hLine() décrite dans la page  
+// http://arduino.dansetrad.fr/PxGraph/hLine.php
+
+// Ce programme dessine des lignes horizontales. Pour qu'il n'y en ait pas trop, il dessine
+// aussi des lignes noires, ce qui "efface" les lignes colorées en trop.
+ 
+#include <PxGraph_ST7781_Shield.h> // Voir http://arduino.dansetrad.fr/PxGraph
+
+void setup() 
+{
+  setGraphMode(PAYSAGE);
+}
+
+void loop()
+{
+  hLine(random(LARGEUR),random(LARGEUR),random(HAUTEUR),RANDOM_COLOR); // Trace des lignes
+  hLine(0,MAX_X,random(HAUTEUR),BLACK); // Efface une première ligne
+  hLine(0,MAX_X,random(HAUTEUR),BLACK); // Efface une autre ligne
+  hLine(0,MAX_X,random(HAUTEUR),BLACK); // Efface une autre ligne
+  hLine(0,MAX_X,random(HAUTEUR),BLACK); // Efface une autre ligne
+  delay(100); // Attendre un peu ne fait pas de mal 
+}

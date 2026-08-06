@@ -24,7 +24,7 @@
 // Quand on demande le mode, il vaut mieux utiliser les constantes car elles
 // sont indépendantes de la version. 
 
-#include <PxGraph_ILI9341_Shield.h> // Voir http://arduino.dansetrad.fr/PxGraph
+#include <PxGraph_ST7781_Shield.h> // Voir http://arduino.dansetrad.fr/PxGraph
 
 void setup()
 {
