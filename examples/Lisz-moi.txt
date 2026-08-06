@@ -1,0 +1,11 @@
+Dans ce répertoire, il y a un certain nombre d'exemples, de démonstrations, d'outils. 
+Certains ont besoin d'une image, d'autres non. Pour que ce soit plus facile, et que 
+tout fonctionne sans se poser de questions, mettez sur une carte microSD le répertoire
+SD ci-dessus. Il doit bien sûr être dans la racine du disque.
+
+"Demonstrations" contient plutôt des exemples complets. La plupart sont présentées dans
+la page http://arduino.dansetrad.fr/PecheuxGraph/ScreenShoot.php
+
+"Documentation" Contient des illustrations d'emploi de différentes fonctions en
+association avec les pages de référence accessibles par exemple par la page
+http://arduino.dansetrad.fr/PecheuxGraph/Reference.php
