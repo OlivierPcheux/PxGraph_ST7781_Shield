@@ -2065,25 +2065,3 @@ void screenPrint(void) // Copie de l'écran sur la carte SD
   _drawInverse_ = ancienDrawImage; // retour valable aussi pour _drawInverse_
 }
 
-
-
-//###########################################################################
-//###########################################################################
-//####                                                                   ####
-//####                         FONCTIONS EVOLUEES                        ####
-//####                                                                   ####
-//###########################################################################
-//###########################################################################
-
-
-//############################### croixCurseur ##############################
-// Croix curseur permet de voir où se fait le pointage du touchpad par exemple
-void croixCurseur(int x, int y)
-{
-  boolean contexte = _drawInverse_; // Sauvegarde de l'état de _drawInverse_
-  _drawInverse_=INVERSE; // Pour dessiner le curseur
-  vLine(x, 0, _max_y_); hLine(0, _max_x_, y); // Dessine une croix curseur
-  delay(100);
-  vLine(x, 0, _max_y_); hLine(0, _max_x_, y); // Efface la croix curseur
-  _drawInverse_=contexte; // Restitution du contexte correct
-}

@@ -291,10 +291,6 @@ byte bmpSave(String fileName, int x1 = -1, int y1 = -1, int x2 = -1, int y2 = -1
 void screenPrint(void); // Copie d'écran sur SD
 
 
-//############################ Graphiques évolués ###########################
-void croixCurseur(int x, int y); // Dessine une croix fugitive
-
-
 //######################### Fonctions de bas niveau #########################
 void writeRegister(byte registre); // Valide un registres de l'afficheur
 void writeData8(byte donnee); // Écrit un octet de donnée dans l'afficheur
