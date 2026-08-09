@@ -80,7 +80,7 @@ void setup()
   // Affichage du résultat
   Serial.begin(BAUDS);
   Serial.println("\nVous utiliserez:");
-  Serial.print("TouchPad.calibrate(PAYSAGE, largeur_ecran 240, hauteur_ecran 320, x_gauche ");
+  Serial.print("TouchPad.calibrate(PAYSAGE, largeur_ecran 320, hauteur_ecran 240, x_gauche ");
   Serial.print(String(x1));
   Serial.print(", y_haut ");
   Serial.print(String(y1));
