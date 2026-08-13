@@ -12,7 +12,7 @@
 //###########################################################################
 
 
-// Ce progrmme permet d'etalonner le stylet pour un shield Uno 240x320
+// Ce programme permet d'étalonner le stylet pour un shield Uno 240x320
 
 // A changer éventuellement par l'utilisateur
 #define BAUDS 115200 // A changer éventuellement
@@ -25,8 +25,8 @@
 // Mise en place du touchpad résistif pour la mise à jour des coordonnés
 MTtouchPadShield TouchPad;
 
-int x1, y1, x2, y2; // Coordonnés des deux points extrèmes
-int ecart; // Variable intermédiare pour faire les calculs
+int x1, y1, x2, y2; // Coordonnés des deux points extrêmes
+int ecart; // Variable intermédiaire pour faire les calculs
 int x, y, oldx = -1, oldy = -1; // Pour dessiner une croix
 
 void setup()
@@ -101,7 +101,7 @@ void loop()
   if (TouchPad.isTouch())
   {
     x = TouchPad.getX(); y = TouchPad.getY();
-    if (x != oldx) // Pour éviter le papillottement; on efface que si c'est utile
+    if (x != oldx) // Pour éviter le papillotement; on efface que si c'est utile
     {
       line(oldx, 0, oldx, 239, BLACK); // Efface l'ancienne verticale
       oldx = x;

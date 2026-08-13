@@ -12,16 +12,16 @@
 //###########################################################################
 
 
-// Ce progrmme teste la fonction setChouia() et getChouia() de l'objet
+// Ce programme teste la fonction setChouia() et getChouia() de l'objet
 // MTtouchPadR.
 
-// Si deux mesures successives d'abscisse et d'odonnées du CAN (entre 0 et
+// Si deux mesures successives d'abscisse et d'ordonnées du CAN (entre 0 et
 // 1023) sont égales à un chouia près, on ne met pas à jour la nouvelle
 // valeur. Avec un écran de 320 pixels de large, le chouia par défaut 3
 // correspond à 1 pixel. Il serait inutile de déclencher une lise à jour, un
 // dessin pour le même pixel. Pour dessiner, un chouia de 3 est très bien.
 // Si on veut plutôt tester un bouton, un chouia de 1000 ou plus déclenchera
-// une action lors de l'appui, mais pas du déplacemment.
+// une action lors de l'appui, mais pas du déplacement.
 // 
 // Dans le programme qui suit si chouia augmente on va avoir des droites au
 // lieu de points car si on a fait une mesure, il faut que l'on soit loin
@@ -73,7 +73,7 @@ void setup()
 {
   Serial.begin(115200);
   setGraphMode(PAYSAGE); // Initialisation de l'écran
-  // La ligne suivante doit être corrigée par le résultat de l'étallonnage (Exemple-600-Etalonnage-shield)
+  // La ligne suivante doit être corrigée par le résultat de l'étalonnage (Exemple-600-Etalonnage-shield)
   TouchPad.calibrate(PAYSAGE, largeur_ecran 320, hauteur_ecran 240, x_gauche 948, y_haut 887, x_droite 152, y_bas 107);
   TouchPad.setChouia(2000); // Pour commencer à 1
   change();

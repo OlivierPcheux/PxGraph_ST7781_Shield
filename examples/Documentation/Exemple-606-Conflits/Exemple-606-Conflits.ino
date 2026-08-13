@@ -12,7 +12,7 @@
 //###########################################################################
 
 // Ce programme passe son temps à lire et écrire des pixels en permanence. On
-// voit que cela ne gène pas les lecture du keyPad qui sont visualiées par un
+// voit que cela ne gène pas les lecture du keyPad qui sont visualisées par un
 // dessin du tracé en rouge, pendant que le fond est mobile entre le vert et
 // le bleu (tâches de Martin).
 // On ne gère pas le levé du stylet pour ne pas alourdir le code
@@ -29,7 +29,7 @@ void setup()
 {
   Serial.begin(115200);
   setGraphMode(PAYSAGE); // Initialisation de l'écran graphique
-  // La ligne suivante doit être corrigée par le résultat de l'étallonnage (Exemple-600-Etalonnage-shield)
+  // La ligne suivante doit être corrigée par le résultat de l'étalonnage (Exemple-600-Etalonnage-shield)
   TouchPad.calibrate(PAYSAGE, largeur_ecran 320, hauteur_ecran 240, x_gauche 948, y_haut 887, x_droite 152, y_bas 107);
 }
 

@@ -12,7 +12,7 @@
 //###########################################################################
 
 
-// Ce progrmme permet de tracer le dépalcement du stylet en utilisant les
+// Ce programme permet de tracer le déplacement du stylet en utilisant les
 // callback. Méthode multitâche
 
 
@@ -36,7 +36,7 @@ MTtouchPadShield TouchPad(select, move);
 void setup()
 {
   setGraphMode(PAYSAGE); // Initialisation de l'écran
-  // La ligne suivante doit être corrigée par le résultat de l'étallonnage (Exemple-600-Etalonnage-shield)
+  // La ligne suivante doit être corrigée par le résultat de l'étalonnage (Exemple-600-Etalonnage-shield)
   TouchPad.calibrate(PAYSAGE, largeur_ecran 320, hauteur_ecran 240, x_gauche 948, y_haut 887, x_droite 152, y_bas 107);
   text("Dessinez sur l'écran"); // Ecriture de la consigne sur l'écran
 }
